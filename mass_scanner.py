@@ -92,7 +92,7 @@ def test_port(ip, port=22):
         result = sock.connect_ex((ip, int(port)))
         sock.close()
         return result == 0
-    except:
+    except OSError:
         return False
 
 def run_masscan(network, port, rate=RATE):

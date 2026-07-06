@@ -122,3 +122,8 @@ CREDENTIALS=(
     "ssh_password2|login_username2|device_password2"
 )
 
+## Usage
+
+```bash
+python3 main.py
+```
